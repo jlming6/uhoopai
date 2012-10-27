@@ -1,4 +1,3 @@
-uhoopai
-=======
-
 UhoopAI
+
+http://uhoopai.randmind.org
