@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
+    color: #004b91;
+}
+a:hover {
+    color: #6893D2;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #646464;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #000;
+    line-height: 1.5em;
+    font-weight: normal;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+h1 {
+    font-size: 36px;
+    line-height: 1.2em;
+}
+h2 { font-size: 31px }
+h3 { font-size: 16px }
+h4 { font-size: 14px }
+h1 a,
+h2 a,
+h3 a,
+h4 a { color: #FFF }
+
+#header {
+	background: url('../images/headerbg.png');
+	height: 25px;
+	padding: 10px;
+}
+
+#header h1 {
+	color: #FFF;
+	font-style: oblique;
+	font-size: 25px;	
+}
+
+.pr {
+	color: white;
+	margin-left: 10px;
+}
+
+#logobox {
+	width: 110px;
+	height: 28px;
+	display: block;
+	float: left;
+}
+
+#container {
+	background: #FFF;
+	padding-top: 20px;
+}
+
+.wrap {
+}
+
+.dismissable {
+	display: block;
+	height: 100px;
+	border-top: 1px solid #E5E9EC;
+	border-bottom: 5px solid #E2E4E8;
+	margin: 10px 0 20px 0;
+	background: -webkit-gradient(linear,left top,left bottom,from(#F7F9FA),to(#ECEEF1));
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+	box-shadow: 0 2px 3px rgba(0,0,0,.25);
+}
+
+.orangeband {
+	background: #FFA500;
+	width: 10px;
+	height: 100px;
+	margin: 0 20px 0 20px;
+	float: left;
+}
+
+.floatbox {
+	float: left;
+	width: 400px;
+}
+
+.dtitle {
+	font-size: 30px;
+	color: #FFA500;
+	font-weight: bold;
+	margin: 15px 0 10px 0;
+	float: left;
+}
+
+.dsub {
+	font-size: 13px;
+	font-weight: normal;
+	color: #505961;
+	margin: 0;
+	float: left;
+}
+
+/*-----------------------------------------------------------------------------------*
+/* Sidebar
+/*-----------------------------------------------------------------------------------*/
+#leftbar {
+	float: left;
+	width: 150px;
+	padding: 20px 0;
+	margin-right: 10px;
+	border: 1px solid #E3E3E3;
+	float: left;
+	text-align: center;
+	background: white;
+}
+
+.firstbar {
+	background: orange;
+	margin: 10px 0;
+}
+
+.firstbar h3 {
+
+}
+
+.secondbar {
+}
+
+.secondbar ul {
+	list-style-type: none;
+}
+
+.clear { 
+	clear: both;
+}
+
+#content {
+	float: left;
+	width: 796px;
+	border: 1px solid #FFA500;
+}
+
+.layout {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#footer {
+	text-align: center;
+	clear: both;
+	margin: 20px 0;
+	padding: 10px 0;
+	border-top: 1px solid #ACACAC;
+}
+
+.page-title {
+	padding: 5px 10px 0;
+	height: 30px;
+	color: #444545;
+	border-bottom: 1px solid #BBB;
+	text-align: center;
+	background-color: #ECEEF1;
+}
+
+.page-title-with-border {
+	padding: 20px 0 0 20px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.post-content {
+	padding: 20px;
+}
+
+hr {
+	width: 140px;
+	border: 0;
+	color: #3274D1;
+	background: #3274D1;
+	height: 3px;
+	margin: 10px 0 20px 0;
+}
+
+.float-left-text {
+	float: left;
+	text-align: left;
+}
+
+.float-right-text {
+	float: right;
+	text-align: right;
+}
+
+.post {
+	padding: 20px 10px;
+}
+
+.basic-form {
+	margin: 20px;
+}
+
+.basic-input {
+	width: 435px;
+	padding: 5px;
+	height: 18px;
+	font-size: 14px;
+	vertical-align: middle;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #C9C9C9;
+}
+
+.row {
+	padding: 5px 0;	
+}
+
+.registration-submit {
+	padding: 5px 0;
+	text-align: left;
+	width: 30px;
+	font-size: 20px;
+}
+
+/*-----------------------------------------------------------------------------------*
+/* Problem
+/*-----------------------------------------------------------------------------------*/
+.object-id {
+	padding: 5px 10px 0;
+	height: 30px;
+	color: #444545;
+	border-bottom: 1px solid #BBB;
+	text-align: left;
+	background-color: #ECEEF1;
+}
+
+.object-title h2{
+	color: #0000CC;
+	text-align: center;
+}
+
+.object-property {
+	border-top: 1px solid #BBB;
+	border-bottom: 1px solid #BBB;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.property-name {
+	color: green;
+	margin-left: 10px;
+}
+
+.object-body {
+	padding: 20px;
+}
+
+.object-body h3 {
+	color: blue;
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.object-action {
+	text-align: center;
+	padding: 10px 0;
+	border-top: 1px solid #BBB;
+}
+
+.problem-table {
+	margin: 20px;
+}
+
+.rowHeader {
+	height: 25px;
+	background-color: blue;
+	width: 100%;
+	color: white;
+}
+
+.problemId {
+	width: 60px;
+	text-align: center;
+	padding: 0 8px;
+}
+
+.problemTitle {
+	width: 300px;
+	text-align: left;
+	padding: 0 20px;
+}
+
+.rowOdd {
+	background-color: #C9C8C8;
+}
+
+.paginator {
+	margin: 20px;
+}
+
+/*-----------------------------------------------------------------------------------*
+/* Contest
+/*-----------------------------------------------------------------------------------*/

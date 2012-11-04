@@ -1,14 +1,14 @@
 from django.conf.urls import patterns, include, url
 
+from django.contrib.auth.views import login, logout
+
 import os
 
-from os.path import dirname
-
-static = os.path.join(dirname(__file__), 'static')
+static = os.path.join(os.path.dirname(__file__), 'static')
 
 # Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+from django.contrib import admin
+admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
@@ -19,11 +19,15 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'uhoopai.views.home'),
+    url(r'^admin/', include(admin.site.urls)),
+
+    url(r'^$', 'uhoopai.views.home', name="mainPage"),
+
+    (r'accounts/', include('registration.backends.default.urls')),
+
     url(r'^gobang/', include('gobang.urls')),
 
     # Site Media
-    (r'^static/(?P<path>.*)$', 'django.views.static.serve',
-        {'document_root' : static}),
+
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve'),
 )

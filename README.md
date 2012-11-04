@@ -1,3 +1,3 @@
 UhoopAI
 
-http://uhoopai.randmind.org
+Home Page: http://uhoopai.randmind.org

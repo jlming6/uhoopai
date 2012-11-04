@@ -1,0 +1,6 @@
+Hi,
+Welcome to Uhoopai, a website where you can write AI!
+To Activate the account, please click the link below:
+http://uhoopai.randmind.org/accounts/activate/{{ activation_key }}
+
+-- UhoopAI Team

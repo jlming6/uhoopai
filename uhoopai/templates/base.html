@@ -1,0 +1,73 @@
+{% url mainPage as main_url %}
+
+<html>
+    <head>
+        <title>{% block title %}{% endblock %} | UhoopAI</title>
+        <link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/style.css" type="text/css" />
+        {% block external %}{% endblock %}
+    </head>
+
+    <body>
+        <div id=header>
+			<div class="layout">
+				<h1 id="logobox"><a href="/">UhoopAI</a></h1>
+				<div class="float-right-text">
+					{% if user.is_authenticated %}
+						{% if user.is_staff %}
+							<a class="pr" href="/admin">Admin</a>
+						{% endif %}
+						<a class="pr" href="/accounts/logout">Logout</a>
+					{% else %}
+						<a class="pr" href="/accounts/login/">Sign In </a>
+						<a class="pr" href="/accounts/register/">Join</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+         
+        <div id="container" class="layout">
+			<div class="dismissable">
+				<div class="orangeband">
+				</div>
+				<div class="floatbox">
+					<p class="dtitle">Welcome to UhoopAI</p>
+					<p class="dsub">@UhoopAI, Play with AI</p>
+				</div>
+			</div>
+			<div class="wrap">
+				<div id="leftbar">
+					<div class="firstbar">
+						<h3>News</h3>
+					</div>
+					<div class="secondbar">
+						<ul>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Ranklist</a>
+							</li>
+						</ul>
+					</div>
+					<div class="firstbar">
+                        <h3>All Games</h3>
+					</div>
+					<div class="secondbar">
+						<ul>
+							<li>
+								<a href="/gobang">Gobang</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="content">
+					{% block content %}{% endblock %}
+				</div>
+			</div>
+			<div class="clear"/>
+		</div>
+		<div id="footer" class="layout">
+            <p>Thanks for visiting UhoopAI.</p>
+        </div>
+    </body>
+</html>
